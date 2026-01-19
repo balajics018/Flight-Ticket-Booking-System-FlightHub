@@ -1,0 +1,19 @@
+# FlightHub✈️
+## Flight Ticket Booking System
+### Features:
+  1. Register and Login
+  2. Search for flights based on date, source and destination
+  3. View the cheapest flights starting from date searched
+  4. Book flights
+  5. View booking history
+  6. Edit booking information
+  7. Cancel bookings
+     
+#### Data Structure Implemented: 
+- custom MyLinkedList & MyQueue class
+- both classes are inside com.ft.flight>src>main>java>com>ft>flight>entity
+  
+#### Tech Stack:
+  - Backend: Java Spring-boot
+  - Frontend: HTML, Javascript, CSS
+  - Database: MySql
