@@ -1,10 +1,1 @@
-# Build stage
-FROM maven:3.8.5-openjdk-17 AS build
-COPY . .
-RUN mvn clean package -DskipTests
-
-# Run stage
-FROM openjdk:17-jdk-slim
-COPY --from=build /target/*.jar app.jar
-EXPOSE 8080
-ENTRYPOINT ["java","-jar","app.jar"]
+FROM maven:3.8.5-openjdk-17 AS build/nCOPY . ./nRUN mvn clean package -DskipTests/n/nFROM eclipse-temurin:17-jdk-focal/nCOPY --from=build /target/*.jar app.jar/nEXPOSE 8080/nENTRYPOINT [/java/,/-jar/,/app.jar/]
